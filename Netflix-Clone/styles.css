@@ -1,0 +1,361 @@
+* {
+    --btn-clr: rgb(229, 9, 20);
+    --hvr-btn: #C11119;
+    --txt-clr: #ffffff;
+    --bg-clr: rgb(0, 0, 0);
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-clr);
+}
+
+/* -----------
+Head Sec 
+----------- */
+
+.main-head {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main-head::before {
+    content: "";
+    background: url(./Assets/bg.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.logo-img {
+    margin-left: 135px;
+}
+
+.btn > button{
+    width: 75px;
+    height: 30px;
+    padding: 0px 8px;
+    border: 1px solid var(--btn-clr);
+    border-radius: 3px;
+    background-color: var(--btn-clr);
+    color: var(--txt-clr);
+    font-size: 0.9em;
+    margin-right: 135px;
+    margin-top: 5px;
+}
+
+.btn > button:hover {
+    background-color: var(--hvr-btn);
+    transition: 0.5s ease;
+}
+
+
+.content {
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading > h1{
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+
+.paragraph > p {
+    font-size: 1.09em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.input-btn {
+    width: 600px;
+    height: 60px;
+    /* border: 1px solid red; */
+}
+
+#email {
+    width: 400px;
+    border-radius: 6px;
+    border: 1px solid #B4B4B4;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.btn-input {
+    width: 200px;
+    border-radius: 7px;
+    border: 1px solid var(--btn-clr);
+    background-color: var(--btn-clr);
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: auto 10px;
+}
+
+.btn-input:hover {
+    background-color: var(--hvr-btn);
+    transition: 0.5s ease;
+}
+
+.btn-input > svg {
+    margin-bottom: 5px;
+}
+
+input::placeholder{
+   padding-left: 10px;
+   color: #B4B4B4;
+   font-weight: 500;
+}
+
+/* ----------------
+Main Sections 
+---------------- */
+
+
+.section-cops {
+    height: 800px;
+    width: 100%;
+    /* border: 1px solid red; */
+   background-image: linear-gradient(to bottom, rgb(22, 21, 21), black);
+}
+
+/* ...existing code... */
+
+/* Trending Now Carousel Styles */
+.slides {
+    padding-top: 20px;
+}
+.slides .card {
+    position: relative;
+    min-width: 180px;
+    max-width: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #181818;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.slides .card img {
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.slides .card span {
+    pointer-events: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #222 !important;
+    opacity: 0.7;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 4%;
+}
+
+@media (max-width: 991px) {
+    .slides .card {
+        min-width: 120px;
+        max-width: 120px;
+    }
+    .slides .card img {
+        height: 180px !important;
+    }
+}
+
+.number-txt {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    font-size: 6.5em;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+/* ...existing code... */
+
+
+
+/* ----------------
+Feature Sec 
+---------------- */
+
+
+.feature-box {
+    width: 250px;
+    height: 300px;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    background-image: linear-gradient(200deg, #1A2144, #210E18);
+}
+
+.feature-box > h3{
+    font-weight: 600;
+    padding: 0px 8px;
+    margin: 12px auto;
+}
+
+.feature-box > p {
+    color: gray;
+    font-weight: 600;
+    padding: 0px 9px;
+    margin: 12px auto;
+}
+
+.feature-line {
+    margin-top: 15px;
+    margin-left: 160px;
+    margin-bottom: 20px;
+}
+
+.icons{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+/* --------------
+FAQ Sec 
+-------------- */
+
+.faq-section {
+    margin: 7rem auto;
+}
+
+.custom-accordion .accordion-item {
+    background-color: #232323 !important;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #333 !important;
+    overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+    background-color: #232323 !important;
+    color: #fff !important;
+    border: none;
+    box-shadow: none;
+}
+.custom-accordion .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #232323;
+    box-shadow: none;
+}
+.custom-accordion .accordion-body {
+    background-color: #232323;
+    color: #fff;
+    font-size: 1.15em;
+    border-top: 1px solid #333;
+}
+.custom-accordion .accordion-button::after {
+    filter: invert(1) grayscale(1);
+}
+.custom-accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* ------------
+sign link
+------------ */
+
+
+.btn-sign {
+    height: 60px;
+    /* border: 1px solid red; */
+    align-items: center;
+    gap:20px;
+}
+
+#email2 {
+    
+    width: 700px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #B4B4B4;
+    border-radius: 5px;
+
+}
+
+.last-sign {
+    width: 200px;
+    height: 60px;
+    background-color: var(--btn-clr);
+    color: var(--txt-clr);
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid var(--btn-clr);
+    border-radius: 5px;
+}
+
+
+/* --------------
+Footer section
+-------------- */
+
+.footer-sec {
+    width: 98vw;
+    height: 400px;
+}
+
+.footer-sec > p > a {
+    color: #B4B4B4;
+    margin-left: 40px;
+}
+
+.footer-sec > p {
+    margin-bottom: 50px;
+}
+
+nav > li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+nav > li > a {
+    color: #B4B4B4;
+
+}
+
+#lang-list {
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.end-list > P {
+    margin-left: 40px;
+    color: #B4B4B4;
+    margin-bottom: 30px;
+}
+
+.end-list > p:nth-child(2){
+    font-weight: 500;
+}
+
+.end-list > p:nth-child(3){
+    font-size: 0.8em;
+}
+
+
+/* ---------------------------The End ---------------------------------- */
